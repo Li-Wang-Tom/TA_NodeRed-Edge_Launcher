@@ -1,0 +1,11 @@
+■■■アイコン有りの場合
+cd "D:\01_設計データ\01_取引先\アムコー様\BLU1200AM\04_プログラム\08_Go\01_src\TA_NodeRed-Edge_Launcher"
+rsrc -ico icon.ico -o resource.syso
+$env:GO111MODULE="off"
+go build -ldflags="-H windowsgui" -o TA_NodeRed-Edge_Launcher.exe .
+
+
+■■■アイコン無しの場合
+cd "D:\01_設計データ\01_取引先\アムコー様\BLU1200AM\04_プログラム\08_Go\01_src\TA_NodeRed-Edge_Launcher"
+$env:GO111MODULE="off"
+go build -ldflags="-H windowsgui" -o TA_NodeRed-Edge_Launcher.exe .
